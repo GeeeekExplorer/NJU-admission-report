@@ -34,7 +34,7 @@ def get_xcm_img(phone, date=None):
     browser.get('https://xc.caict.ac.cn/#/result')
     browser.refresh()
     browser.execute_script('document.body.style.overflow="hidden";')
-    time.sleep(5)
+    time.sleep(10)
     binary_content = browser.get_screenshot_as_png()
     browser.quit()
     return binary_content
@@ -48,7 +48,7 @@ def get_skm_img(token):
     #     executable_path='./driver/chromedriver.exe', options=option) # for Windows
     browser.get(url)
     browser.execute_script('document.body.style.overflow="hidden";')
-    time.sleep(5)
+    time.sleep(10)
     binary_content = browser.get_screenshot_as_png()
     browser.quit()
     return binary_content
